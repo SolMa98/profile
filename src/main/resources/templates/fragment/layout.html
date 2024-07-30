@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" th:fragment="layoutFragment">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+        <link
+                rel="stylesheet"
+                as="style"
+                onload="this.rel='stylesheet'"
+                href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+        />
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link rel="stylesheet" th:href="@{/fragment/css/header.css}"/>
+        <link rel="stylesheet" th:href="@{/fragment/css/layout.css}"/>
+        <link rel="stylesheet" th:href="@{/fragment/css/footer.css}"/>
+
+        <title>김동현 프로필</title>
+    </head>
+    <body>
+        <div th:replace="~{fragment/header.html::headerFragment}"></div>
+        <div th:replace="~{fragment/footer.html::footerFragment}"></div>
+    </body>
+</html>

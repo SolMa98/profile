@@ -1,0 +1,42 @@
+.header-area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 0.75rem 2.5rem;
+}
+
+.header-area .header-left {
+    color: black;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+.header-area .header-left .header-title {
+    color: black;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.header-area .header-right {
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 0;
+}
+
+.header-area .header-right .header-right-menu {
+    gap: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-area .header-right .header-right-menu a {
+    color: #1C160C;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
