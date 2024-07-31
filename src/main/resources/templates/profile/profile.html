@@ -13,13 +13,33 @@
                         style='background-image: url("https://cdn.usegalileo.ai/sdxl10/b2f133dd-eab5-4a4d-b2a7-034c308686ea.png");'
                 >
                 </div>
-                <div class="main-profile-section-2">
+                <div class="main-profile-basic-section-2">
                     <p>name : [User's Name]</p>
                     <p>age : [User's Age]</p>
                     <p>Bright and engaging profile for personal branding</p>
                 </div>
             </div>
+            <div class="main-profile-details">
+                <div class="main-profile-details-section-1">
+                    <p class="detail-tab detail-tab-selected" data-key="cover-letter">자기소개서</p>
+                    <p class="detail-tab" data-key="certificate">자격증</p>
+                    <p class="detail-tab" data-key="career">학교/경력</p>
+                </div>
+                <div class="main-profile-details-section-2">
+                    <div class="detail-cover-letter" id="detail-cover-letter">
+
+                    </div>
+                    <div class="detail-certificate display-none" id="detail-certificate">
+                        <canvas id="certificateChart" width="1270" height="450"></canvas>
+                    </div>
+                    <div class="detail-career display-none" id="detail-career">
+                        <canvas id="careerChart" width="1270" height="450"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="/page/js/profile/profile.js"></script>
+<script src="/page/js/chart/chart.js"></script>
 </html>
