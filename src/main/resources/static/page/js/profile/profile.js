@@ -14,14 +14,41 @@ let profile = function (){
             }
         });
 
-        chartUtils.chartDrawing("certificateChart", "line", "자격증", {
-            labels: ['ITQ 엑셀', '컴퓨터 활용능력 2급', 'ITQ 액세스', '정보처리기능사'],
-            datasets: [{
-                label: '자격증 취득일',
-                data: [2014.12, 2015.07, 2015.10, 2019.05],
-                borderWidth: 1
-            }]
-        });
+        let certificateData = [
+            { label : 'ITQ 액셀', value : 2014.12 },
+            { label : '컴퓨터 활용능력 2급', value : 2015.07 },
+            { label : 'ITQ 액세스', value : 2015.10 },
+            { label : '정보처리기능사', value : 2019.05 }
+        ];
+
+        let certificateChartData = chartUtils.makeChartData('자격증 취득일', certificateData);
+        chartUtils.chartDrawing("certificateChart", "line", "자격증", certificateChartData);
+        certificateTableDrawing(certificateData);
+
+        let gpaData = [
+            {label : '1학년 1학기', value : 3.83 },
+            {label : '1학년 2학기', value : 3.92 },
+            {label : '2학년 1학기', value : 4.5 },
+            {label : '2학년 2학기', value : 4.5 },
+            {label : '3학년 1학기', value : 4.21 },
+            {label : '3학년 2학기', value : 3.3 }
+        ];
+        let gpaChartData = chartUtils.makeChartData('학점', gpaData);
+
+        chartUtils.chartDrawing("careerChart", "line", "학점", gpaChartData);
+    }
+
+    function certificateTableDrawing(datasets) {
+        let tableHtml = '';
+        let count = 1;
+        for(let data of datasets){
+            tableHtml += `<tr>
+                            <td>${count++}</td>
+                            <td>${data.label}</td>
+                            <td>${utils.formatDate(data.value.toString())}</td>
+                          </tr>`;
+        }
+        $('#detailTable').append(tableHtml);
     }
 
     return {

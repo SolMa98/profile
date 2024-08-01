@@ -30,10 +30,27 @@
 
                     </div>
                     <div class="detail-certificate display-none" id="detail-certificate">
-                        <canvas id="certificateChart" width="1270" height="450"></canvas>
+                        <table class="detail-table mb-15" id="detailTable">
+                            <tr>
+                                <th>No</th>
+                                <th>자격증</th>
+                                <th>취득일자</th>
+                            </tr>
+                        </table>
+                        <canvas class="mb-15" id="certificateChart" width="500px" height="250px"></canvas>
                     </div>
                     <div class="detail-career display-none" id="detail-career">
-                        <canvas id="careerChart" width="1270" height="450"></canvas>
+                        <table class="detail-table mb-15" id="detailCareer">
+                            <tr>
+                                <th>No</th>
+                                <th>소속</th>
+                                <th>기간</th>
+                            </tr>
+                        </table>
+                        <div class="detail-GPA">
+                            <p class="detail-title">학점</p>
+                            <canvas id="careerChart" width="500px" height="250px"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
