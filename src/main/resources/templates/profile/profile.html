@@ -14,44 +14,53 @@
                 >
                 </div>
                 <div class="main-profile-basic-section-2">
-                    <p>name : [User's Name]</p>
-                    <p>age : [User's Age]</p>
-                    <p>Bright and engaging profile for personal branding</p>
+                    <p>이름 : 김동현</p>
+                    <p>나이 : 27</p>
+                    <p>안녕하세요 개발자를 꿈꾸고 있는 김동현이라고 합니다.</p>
                 </div>
             </div>
             <div class="main-profile-details">
                 <div class="main-profile-details-section-1">
                     <p class="detail-tab detail-tab-selected" data-key="cover-letter">자기소개서</p>
                     <p class="detail-tab" data-key="certificate">자격증</p>
-                    <p class="detail-tab" data-key="career">학교/경력</p>
+                    <p class="detail-tab" data-key="school">학교</p>
+                    <p class="detail-tab" data-key="career">경력</p>
                 </div>
                 <div class="main-profile-details-section-2">
-                    <div class="detail-cover-letter" id="detail-cover-letter">
-
+                    <div class="detail-cover-letter h-100" id="detail-cover-letter">
+                        <div class="main-profile-item-section h-100" style="padding: 15px 10px 15px 1.5rem;">
+                            <textarea readonly id="coverLetter">
+                            </textarea>
+                        </div>
                     </div>
                     <div class="detail-certificate display-none" id="detail-certificate">
-                        <div class="mr-5">
-                            <table class="detail-cert-table" id="detailTable">
-                                <tr>
-                                    <th>No</th>
-                                    <th>자격증</th>
-                                    <th>취득일자</th>
-                                </tr>
-                            </table>
-                        </div>
+                        <table class="detail-table mr-5" id="certTable">
+                            <tr>
+                                <th>No</th>
+                                <th>자격증</th>
+                                <th>취득일자</th>
+                            </tr>
+                        </table>
                         <div class="main-profile-item-section">
                             <canvas class="mb-15" id="certificateChart" width="500px" height="250px"></canvas>
                         </div>
                     </div>
-                    <div class="detail-career display-none" id="detail-career">
-                        <table class="detail-table mb-15" id="detailCareer">
+                    <div class="detail-school display-none" id="detail-school">
+                        <table class="detail-table mr-5" id="detailSchool">
                             <tr>
                                 <th>No</th>
                                 <th>소속</th>
                                 <th>기간</th>
                             </tr>
                         </table>
-                        <canvas id="careerChart" width="500px" height="250px"></canvas>
+                        <div class="main-profile-item-section">
+                            <canvas id="schoolChart" width="500px" height="250px"></canvas>
+                        </div>
+                    </div>
+                    <div class="detail-career display-none" id="detail-career">
+                        <table class="career-table mb-15" id="detailCareer">
+
+                        </table>
                     </div>
                 </div>
             </div>

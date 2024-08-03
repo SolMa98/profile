@@ -88,7 +88,7 @@
 }
 
 .main-profile-details .main-profile-details-section-1 p:hover {
-    color: #1C160C;
+    font-weight: bold;
 }
 
 .main-profile-details .main-profile-details-section-1 .detail-tab-selected {
@@ -100,6 +100,29 @@
     height: calc(100% - 34px);
 }
 
+.main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea{
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0px;
+}
+
+.main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea::-webkit-scrollbar {
+    width: 10px;
+}
+.main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea::-webkit-scrollbar-thumb {
+    background-color: #A18249;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea::-webkit-scrollbar-track {
+    background-color: #F4EFE6;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
 .main-profile-details .main-profile-details-section-2 div{
     display: flex;
     justify-content: space-around;
@@ -107,34 +130,36 @@
     align-items: flex-start;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-cert-table{
+.main-profile-details .main-profile-details-section-2 .detail-table{
     font-size: 15px;
     width: 100%;
     height: 100%;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-cert-table tbody{
+.main-profile-details .main-profile-details-section-2 .detail-table tbody{
     width: 100%;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-cert-table tr{
+.main-profile-details .main-profile-details-section-2 .detail-table tr{
     width: 100%;
     height: 20px;
     border-bottom: 1px solid #F4EFE6;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-cert-table th{
+.main-profile-details .main-profile-details-section-2 .detail-table th{
     width: 33%;
     padding: 5px;
     color: #A18249;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-cert-table td{
+.main-profile-details .main-profile-details-section-2 .detail-table td{
     text-align: center;
     padding: 5px;
 }
 
-.main-profile-details .main-profile-details-section-2 .detail-certificate {
+.main-profile-details .main-profile-details-section-2 .detail-certificate,
+.main-profile-details .main-profile-details-section-2 .detail-career,
+.main-profile-details .main-profile-details-section-2 .detail-school{
     padding: 5px;
 }
 
@@ -142,4 +167,30 @@
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.main-profile-details .main-profile-details-section-2 .career-table{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-profile-details .main-profile-details-section-2 .career-table tbody{
+    width: 100%;
+}
+
+.main-profile-details .main-profile-details-section-2 .career-table tr{
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #F4EFE6;
+}
+
+.main-profile-details .main-profile-details-section-2 .career-table td{
+    text-align: center;
+    padding: 5px;
+}
+
+.main-profile-details .main-profile-details-section-2 .career-table .career-attribute {
+    color: #A18249;
+    font-weight: bold;
 }
