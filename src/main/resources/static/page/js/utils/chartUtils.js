@@ -3,19 +3,37 @@ let chartUtils = function (){
         const chart = document.getElementById(id);
 
         let options = {
-            responsive: false
+            responsive: false,
+            plugins: {
+                legend: {
+                    onClick: null // 범례 클릭 이벤트 비활성화
+                }
+            }
         };
 
         if (type === '자격증') {
             options = {
                 responsive : false,
                 plugins: {
+                    legend: {
+                        onClick: null // 범례 클릭 이벤트 비활성화
+                    },
                     tooltip: {
                         callbacks: {
                             label: function (context) {
                                 let label = context.dataset.label;
                                 let value = utils.formatDate(context.raw.toString());
                                 return `${label}: ${value}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: function(value) {
+                                // 문자열로 변환하여 천 단위 구분 기호를 제거
+                                return value.toString().replace(/,/g, '');
                             }
                         }
                     }

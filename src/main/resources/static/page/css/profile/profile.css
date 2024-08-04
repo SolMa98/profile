@@ -25,6 +25,11 @@
     flex-direction: column;
 }
 
+.main-section .main-item .main-profile-basic .profile-img{
+    width: 8rem;
+    min-height: 8rem;
+}
+
 .main-section .main-item .main-profile-basic .main-profile-basic-section-2{
     display: flex;
     justify-content: center;
@@ -106,6 +111,12 @@
     height: 100%;
     resize: none;
     padding: 0px;
+}
+
+.main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea:focus{
+    outline: none;
+    outline-offset : 0;
+    --tw-ring-color : none;
 }
 
 .main-profile-details .main-profile-details-section-2 .detail-cover-letter textarea::-webkit-scrollbar {
